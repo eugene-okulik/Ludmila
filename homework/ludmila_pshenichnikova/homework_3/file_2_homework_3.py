@@ -10,5 +10,3 @@ div = y / (1 + mult)
 total = x - div
 
 print(total)
-
-

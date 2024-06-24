@@ -35,4 +35,3 @@ students = ','.join(students)
 subjects = ','.join(subjects)
 my_text = 'Students {} study these subjects: {}'
 print(my_text.format(students, subjects))
-

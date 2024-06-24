@@ -1,10 +1,7 @@
 person = ['John', 'Doe', 'New York', '+1372829383739', 'US']
 # name, last_name, city, phone, country
-name = person[0]
-last_name = person[1]
-city = person[2]
-phone = person[3]
-country = person[4]
+
+name, last_name, city, phone, country = person
 print(name, last_name, city, phone, country)
 
 # С помощью срезов и метода index получите из каждой строки с результатом число,
@@ -31,13 +28,11 @@ new_number3 = number3 + 10
 print(new_number1, new_number2, new_number3)
 
 students = ['Ivanov', 'Petrov', 'Sidorov']
-a = students[0]
-b = students[1]
-c = students[2]
 subjects = ['math', 'biology', 'geography']
-d = subjects[0]
-e = subjects[1]
-f = subjects[2]
+
 # Students Ivanov, Petrov, Sidorov study these subjects: math, biology, geography
-my_text = 'Students {}, {}, {} study these subjects: {}, {}, {}'
-print(my_text.format(a, b, c, d, e, f))
+students = ','.join(students)
+subjects = ','.join(subjects)
+my_text = 'Students {} study these subjects: {}'
+print(my_text.format(students, subjects))
+

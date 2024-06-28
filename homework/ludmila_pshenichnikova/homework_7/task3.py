@@ -6,9 +6,12 @@ main_number = 10
 
 
 def final(*args):
-    number = int(args.split()[-1])
-    result = 0
-    for number in args:
+    results = []
+    for arg in args:
+        number = int(arg.split()[-1])
         result = number + main_number
-        return result
-    print(final(args))
+        results.append(result)
+    return results
+
+
+print(final(str1, str2, str3, str4))

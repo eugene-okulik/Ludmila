@@ -5,6 +5,7 @@ str4 = 'результат: 2'
 main_number = 10
 
 
+
 def final(*args):
     results = []
     for arg in args:

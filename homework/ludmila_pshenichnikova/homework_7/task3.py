@@ -4,6 +4,7 @@ str3 = 'результат работы программы: 209'
 str4 = 'результат: 2'
 main_number = 10
 
+
 def final(*args):
     number = int(args.split()[-1])
     result = 0

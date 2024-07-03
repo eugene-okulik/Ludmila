@@ -3,6 +3,8 @@ def fibonacci_generator():
     while True:
         yield a
         a, b = b, a + b
+
+
 number_5 = 0
 number_200 = 0
 number_1000 = 0

@@ -33,6 +33,8 @@ def calc(first, second, operation):
             return 'Division by zero is prohibited'
     else:
         return 'wrong'
+
+
 fin_result = calc(first_number, second_number)
 
 

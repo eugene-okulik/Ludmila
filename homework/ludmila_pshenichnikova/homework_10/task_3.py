@@ -34,4 +34,6 @@ def calc(first, second, operation):
     else:
         return 'wrong'
 fin_result = calc(first_number, second_number)
+
+
 print(f'The result is: {fin_result}')

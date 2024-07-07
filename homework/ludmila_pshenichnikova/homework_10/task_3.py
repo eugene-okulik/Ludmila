@@ -1,9 +1,10 @@
 first_number = float(input('Enter the first number: '))
 second_number = float(input('Enter the second number: '))
 
+
 def new_decorator(func):
     def wrapper(first, second):
-        print(f'function started')
+        print('function started')
         if first == second:
             operation = '+'
         elif first > second:
@@ -15,6 +16,7 @@ def new_decorator(func):
         result = func(first, second, operation)
         return result
     return wrapper
+
 
 @new_decorator
 def calc(first, second, operation):

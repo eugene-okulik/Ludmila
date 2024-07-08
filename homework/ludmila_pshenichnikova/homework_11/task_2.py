@@ -2,7 +2,7 @@ class Book:
    material = "бумага"
    has_text = True
 
-   def __init__(self, title, author, pages,):
+   def __init__(self, title, author, pages):
        self.title = title
        self.author = author
        self.pages = pages
@@ -12,7 +12,7 @@ class Book:
        self.reserved = True
 
    def __str__(self):
-       return f'Название: {self.title}, Автор: {self.author}, страниц: {self.pages}'.strip()
+        return f'Название: {self.title}, Автор: {self.author}, страниц: {self.pages}'.strip()
 
 
 class School(Book):

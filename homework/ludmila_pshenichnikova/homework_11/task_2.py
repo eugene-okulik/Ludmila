@@ -1,17 +1,17 @@
 class Book:
-   material = "бумага"
-   has_text = True
+    material = "бумага"
+    has_text = True
 
-   def __init__(self, title, author, pages):
-       self.title = title
-       self.author = author
-       self.pages = pages
-       self.reserved = False
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+        self.reserved = False
 
-   def reserve(self):
-       self.reserved = True
+    def reserve(self):
+        self.reserved = True
 
-   def __str__(self):
+    def __str__(self):
         return f'Название: {self.title}, Автор: {self.author}, страниц: {self.pages}'.strip()
 
 

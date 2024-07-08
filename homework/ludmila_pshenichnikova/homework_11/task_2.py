@@ -2,7 +2,6 @@ class Book:
    material = "бумага"
    has_text = True
 
-
    def __init__(self, title, author, pages,):
        self.title = title
        self.author = author
@@ -15,7 +14,6 @@ class Book:
    def __str__(self):
        return f'Название: {self.title}, Автор: {self.author}, страниц: {self.pages}'.strip()
 
-
 class School(Book):
 
 
@@ -27,7 +25,8 @@ class School(Book):
 
     def __str__(self):
         reserve_status = ', зарезервирована' if self.reserved else ''
-        return f'Название: {self.title}, Автор: {self.author}, страниц: {self.pages}, предмет: {self.subject}, класс: {self.group}{reserve_status}'.strip()
+        return (f'Название: {self.title}, Автор: {self.author}, страниц: {self.pages}, '
+                f'предмет: {self.subject}, класс: {self.group}{reserve_status}').strip()
 
 
 book_one = School('Aлгебра','Иванов', 500, 'Математика', 5,  True )

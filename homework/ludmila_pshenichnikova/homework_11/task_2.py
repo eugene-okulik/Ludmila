@@ -29,14 +29,14 @@ class School(Book):
                 f'предмет: {self.subject}, класс: {self.group}{reserve_status}').strip()
 
 
-book_one = School('Aлгебра','Иванов', 500, 'Математика', 5,  True )
-book_two = School('История', 'Петров', 200, 'История', 8,  False)
-book_three = School('География', 'Сидоров', 350, 'География', 8,  False)
-book_four = School('Биология', 'Марков', 400, 'Биология', 9,  True)
-book_five = School('Физика', 'Петров', 280, 'Физика', 10,  True)
+book_one = School('Aлгебра','Иванов',500,'Математика',5,True )
+book_two = School('История','Петров',200,'История',8,False)
+book_three = School('География','Сидоров',350,'География',8,False)
+book_four = School('Биология','Марков',400,'Биология',9,True)
+book_five = School('Физика','Петров',280,'Физика',10, True)
 
 book_four.reserve()
 
 books = [book_one, book_two, book_three, book_four, book_five]
 for book in books:
-   print(book)
+    print(book)

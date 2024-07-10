@@ -14,6 +14,7 @@ class Rose(Flower):
     def __init__(self, color, stem_length, cost, lifespan):
         super().__init__('Rose', color, stem_length, cost, lifespan)
 
+
 class Tulip(Flower):
     def __init__(self, color, stem_length, cost, lifespan):
         super().__init__('Tulip', color, stem_length, cost, lifespan)

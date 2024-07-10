@@ -9,6 +9,7 @@ class Flower:
     def __repr__(self):
         return f'{self.name}({self.color}, {self.stem_length}cm, ${self.cost}, {self.lifespan} days)'
 
+
 class Rose(Flower):
     def __init__(self, color, stem_length, cost, lifespan):
         super().__init__('Rose', color, stem_length, cost, lifespan)
@@ -17,9 +18,11 @@ class Tulip(Flower):
     def __init__(self, color, stem_length, cost, lifespan):
         super().__init__('Tulip', color, stem_length, cost, lifespan)
 
+
 class Lily(Flower):
     def __init__(self, color, stem_length, cost, lifespan):
         super().__init__('Lily', color, stem_length, cost, lifespan)
+
 
 class Bouquet:
     def __init__(self):
@@ -44,6 +47,7 @@ class Bouquet:
 
     def __repr__(self):
         return f'Bouquet({self.flowers})'
+
 
 rose1 = Rose('red', 40, 5, 7)
 rose2 = Rose('white', 35, 4.5, 7)

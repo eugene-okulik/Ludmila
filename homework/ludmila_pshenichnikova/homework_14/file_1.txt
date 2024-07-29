@@ -1,0 +1,40 @@
+INSERT INTO `groups` (title, start_date, end_date) VALUES ('Autoqa', 'июль', 'август')
+
+INSERT INTO students (name, second_name, group_id) VALUES ('Ludmila', 'Pshenichnikova', 1563)
+
+INSERT INTO books (title, taken_by_student_id) VALUES ('book_one', 1633)
+
+INSERT INTO books (title, taken_by_student_id) VALUES ('book_two', 1633)
+
+INSERT INTO subjets (title) VALUES ('Testing')
+
+INSERT INTO subjets (title) VALUES ('English')
+
+INSERT INTO lessons (title, subject_id) VALUES ('chapter1', 2077)
+
+INSERT INTO lessons (title, subject_id) VALUES ('chapter2', 2077)
+
+INSERT INTO lessons (title, subject_id) VALUES ('english_chapter1', 2078)
+
+INSERT INTO lessons (title, subject_id) VALUES ('english_chapter2', 2078)
+
+INSERT INTO marks (value , lesson_id, student_id) VALUES (5, 4636, 1633)
+
+INSERT INTO marks (value , lesson_id, student_id) VALUES (5, 4637, 1633)
+
+INSERT INTO marks (value , lesson_id, student_id) VALUES ('perfecto', 4638, 1633)
+
+INSERT INTO marks (value , lesson_id, student_id) VALUES ('genial', 4639, 1633)
+
+SELECT * FROM marks WHERE student_id = 1633
+
+SELECT * FROM books WHERE taken_by_student_id = 1633
+
+SELECT s.name, s.second_name, g.title, g.start_date, g.end_date, b.title, subjets.title, l. title, m.value
+FROM students s
+LEFT JOIN books b ON s.id = b.taken_by_student_id
+LEFT JOIN `groups` g ON s.group_id = g.id
+LEFT JOIN marks m ON s.id = m.student_id
+LEFT JOIN lessons l ON m.lesson_id = l.id
+LEFT JOIN subjets ON l.subject_id = subjets.id
+WHERE s.name = 'Ludmila'
